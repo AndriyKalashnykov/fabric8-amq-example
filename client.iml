@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Osmorc" name="OSGi">
+      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="client-0.1-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="com.github.pires.example.client" bundleVersion="0.1.0.SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+        <additionalProperties>
+          <property key="Bundle-Name" value="Fabric8 ActiveMQ Client example" />
+          <property key="Implementation-Version" value="0.1-SNAPSHOT" />
+          <property key="Import-Package" value="*" />
+          <property key="Export-Package" value="com.github.pires.example.client" />
+          <property key="DynamicImport-Package" value="${osgi.dynamic.pkg}" />
+          <property key="-failok" value="true" />
+          <property key="Require-Bundle" value="${osgi.require.bundle}" />
+          <property key="Export-Service" value="${osgi.services.export}" />
+          <property key="Embed-Dependency" value="${osgi.embed.dependency}" />
+          <property key="Embed-Transitive" value="${osgi.embed.transitive}" />
+          <property key="Require-Capability" value="${osgi.capabilities.require}" />
+          <property key="Provide-Capability" value="${osgi.capabilities.provide}" />
+          <property key="Service-Component" value="${osgi.service.component}" />
+          <property key="-removeheaders" value="Import-Service" />
+          <property key="Meta-Persistence" value="${osgi.meta.persistence}" />
+        </additionalProperties>
+        <additionalJARContents />
+      </configuration>
+    </facet>
+    <facet type="osgiBundleFacet" name="OSGi Bundle">
+      <configuration />
+    </facet>
+    <facet type="osgiBundleFacetType" name="OSGi Bundle">
+      <configuration>
+        <properties />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/client/target/classes" />
+    <output-test url="file://$MODULE_DIR$/client/target/test-classes" />
+    <content url="file://$MODULE_DIR$/client">
+      <sourceFolder url="file://$MODULE_DIR$/client/src/main/java" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/client/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

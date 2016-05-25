@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Osmorc" name="OSGi">
+      <configuration manifestGenerationMode="OsmorcControlled" manifestLocation="" jarfileLocation="client-impl-0.1-SNAPSHOT.jar" outputPathType="CompilerOutputPath" bndFileLocation="" bundlorFileLocation="" bundleActivator="" bundleSymbolicName="com.github.pires.example.client-impl" bundleVersion="0.1.0.SNAPSHOT" ignoreFilePattern="" useProjectDefaultManifestFileLocation="true" alwaysRebuildBundleJAR="false" doNotSynchronizeWithMaven="false">
+        <additionalProperties>
+          <property key="Bundle-Name" value="Fabric8 ActiveMQ Client example implementation" />
+          <property key="Implementation-Version" value="0.1-SNAPSHOT" />
+          <property key="Import-Package" value="!org.apache.felix.scr.annotations*, *" />
+          <property key="Private-Package" value="com.github.pires.example.client.impl" />
+          <property key="DynamicImport-Package" value="${osgi.dynamic.pkg}" />
+          <property key="-failok" value="true" />
+          <property key="Require-Bundle" value="${osgi.require.bundle}" />
+          <property key="Export-Service" value="${osgi.services.export}" />
+          <property key="Embed-Dependency" value="${osgi.embed.dependency}" />
+          <property key="Embed-Transitive" value="${osgi.embed.transitive}" />
+          <property key="Require-Capability" value="${osgi.capabilities.require}" />
+          <property key="Provide-Capability" value="${osgi.capabilities.provide}" />
+          <property key="Service-Component" value="OSGI-INF/*" />
+          <property key="-removeheaders" value="Import-Service" />
+          <property key="Meta-Persistence" value="${osgi.meta.persistence}" />
+        </additionalProperties>
+        <additionalJARContents />
+      </configuration>
+    </facet>
+    <facet type="osgiBundleFacet" name="OSGi Bundle">
+      <configuration />
+    </facet>
+    <facet type="osgiBundleFacetType" name="OSGi Bundle">
+      <configuration>
+        <properties />
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/client.impl/target/classes" />
+    <output-test url="file://$MODULE_DIR$/client.impl/target/test-classes" />
+    <content url="file://$MODULE_DIR$/client.impl">
+      <sourceFolder url="file://$MODULE_DIR$/client.impl/src/main/java" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/client.impl/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.felix:org.apache.felix.scr.annotations:1.9.8" level="project" />
+    <orderEntry type="module" module-name="client" scope="PROVIDED" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.slf4j:slf4j-api:1.7.5" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.activemq:activemq-all:5.9.1" level="project" />
+  </component>
+</module>
